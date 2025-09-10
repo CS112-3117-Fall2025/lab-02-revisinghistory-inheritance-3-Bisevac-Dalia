@@ -1,8 +1,8 @@
 /**
  * Main.java - Driver class to demonstrate revised historical examples
  * 
- * @author ???
- * @version ???
+ * @author Dalia Bisevac
+ * @version 1.0
  */
 
 public class Main {
@@ -26,5 +26,23 @@ public class Main {
 		System.out.println("REVISED HISTORICAL EVENT EXAMPLE:");
 		System.out.println("====================================================");
 		tulsaMassacre.teach();
+
+		// My example is the Bosnian Genocide 
+        String bosniaDescription = "During the early 1990s there was a breakup of Yugoslavia, the country comprised of multiple Balkan countries (such as Bosnia, Montenegro, Croatia, etc), a brutal conflict took place between Bosnian and Serbian forces in Bosnia and Herzegovina with a great number of casualties and many mass expulsions.";
+        Date bosniaDate = new Date(7, 11, 1995); // Srebrenica massacre date in July 1995
+
+        // Revised description of the genocide
+        String bosniaRevised = "On July 11, 1995, Serbian miliary forces overran the UN-protected town of Srebrenica, filled with an entirely civilian population. " +
+                "In the aftermath of this ambush, approximately 8,000 (and counting as bodies are still being uncovered to this day) Bosniak (Bosnian Muslim) men and boys were systematically separated, detained in concentration camps and executed in a campaign that international courts and the United Nations have recognized as genocide. " +
+                "These killings were followed by mass burials, later investigations and trials (as cited by the ICTY and successor tribunals) established responsibility for planning and executing large-scale atrocities with no regard to war crime insinuations and have prosecuted senior leaders for genocide and related crimes.";
+        // Reputable sources: ICTY judgement(s) and USHMM summary
+        String bosniaCitation = "ICTY judgement (Krstic)/ICTY documents: https://www.icty.org/x/cases/krstic/tjug/en/krs-tj010802e.pdf | USHMM: https://www.ushmm.org/genocide-prevention/countries/bosnia-herzegovina";
+
+        RevisedHistoricalEvent bosniaEvent = new RevisedHistoricalEvent(bosniaDescription, bosniaDate, bosniaRevised, bosniaCitation);
+
+        System.out.println("\n\n====================================================");
+        System.out.println("ADDITIONAL REVISED HISTORICAL EVENT (Student Submission):");
+        System.out.println("====================================================");
+        bosniaEvent.teach();
 	}
 }
